@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* imports */
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import "variables";
+/* variables */
+
+
+
+body{
+  font-family: map_get($fonts, primary);
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: #F9F9F9;
+  margin: 0;
+  padding: 0;
+
+}
+
+
