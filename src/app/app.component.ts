@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DataFetchService} from "../data/data-fetch.service";
-
+import {BotConnect} from "./azure/BotConnect";
 
 
 
@@ -11,15 +10,14 @@ import {DataFetchService} from "../data/data-fetch.service";
 })
 export class AppComponent implements OnInit{
   title = 'prototype';
+  botConnect: BotConnect;
 
-  constructor(private data : DataFetchService) { }
+  constructor() {
+  }
 
   ngOnInit() {
 
 
-
-
-    //this.message.valueChanges.subscribe(console.log)
   }
 
 }

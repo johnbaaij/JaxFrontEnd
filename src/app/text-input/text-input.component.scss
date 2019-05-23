@@ -1,0 +1,52 @@
+@import "~src/variables";
+
+#wrapper{
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+
+#textInput {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  left: 0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  box-shadow:         0px -1px 2px 0px rgba(50, 50, 50, 0.5);}
+
+#textField{
+  width: 90%;
+  //margin-left: -10px;
+  outline: none;
+  height: 35px;
+  margin-top: 5px;
+
+  display:table-cell;
+  vertical-align:middle;
+  padding-left:10px;
+  border-radius: 17px;
+
+}
+
+button{
+  position:absolute;
+  right: 35px;
+  top: 10px;
+  border:none;
+  height:24px;
+  width:24px;
+  outline:none;
+  background-image: url(../../assets/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+}

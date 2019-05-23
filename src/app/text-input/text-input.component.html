@@ -1,0 +1,6 @@
+<div id="wrapper">
+  <div id ="textInput">
+        <input (keyup.enter)="onClick()" placeholder="{{placeholder}}" id="textField" type="text" [formControl]="message">
+        <button  (click) = onClick() type="submit"></button>
+      </div>
+</div>

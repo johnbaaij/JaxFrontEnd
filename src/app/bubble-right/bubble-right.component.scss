@@ -1,0 +1,11 @@
+//Only add things that are specific for bubble right. Everything else should go into bubble.component.scss
+
+@import "~src/app/bubble/bubble.component";
+#bubble{
+  background-color: $secondaryColor;
+  margin-left: 40%;
+}
+#bubbleArrow{
+  float: right;
+  fill: $secondaryColor;
+}

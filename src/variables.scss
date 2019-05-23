@@ -1,8 +1,17 @@
 $fonts:(
   primary:'Open Sans',
-
 );
+
+$secondaryColor: #FF7272;
 
 $barSize: 56px;
 
 $margin: 16px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);

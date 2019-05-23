@@ -17,6 +17,9 @@ import { BubbleRightComponent } from './bubble-right/bubble-right.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BubbleLeftComponent } from './bubble-left/bubble-left.component';
 import { BubbleWrapperComponent } from './bubble-wrapper/bubble-wrapper.component';
+import { QuickReplyComponent } from './quick-reply/quick-reply.component';
+import {CookieService} from "ngx-cookie-service";
+
 
 
 const appRoutes: Routes = [
@@ -32,7 +35,8 @@ const appRoutes: Routes = [
     BubbleComponent,
     BubbleRightComponent,
     BubbleLeftComponent,
-    BubbleWrapperComponent
+    BubbleWrapperComponent,
+    QuickReplyComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [DataFetchService],
+  providers: [DataFetchService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

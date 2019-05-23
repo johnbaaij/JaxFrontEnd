@@ -1,0 +1,19 @@
+
+
+<div  class ="container-fluid" >
+  <div class ="row">
+    <div class = " col-md-7 col-6">
+    </div>
+    <div id ="chat" class="col-12 col-md-4">
+      <app-bar></app-bar>
+      <div id ="main" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+            <div *ngFor="let receivedMessage of receivedMessages">
+              <div class="col-sm">
+                <app-bubble-wrapper [chatMessage] = receivedMessage></app-bubble-wrapper>
+              </div>
+            </div>
+        <app-text-input class="fixed-bottom" ></app-text-input>
+      </div>
+    </div>
+  </div>
+</div>

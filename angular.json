@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": ["src/assets/js/flowai-js.min.js"],
+            "scripts": ["src/assets/js/flowai-js.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -89,7 +91,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": ["src/assets/js/flowai-js.min.js"],
+            "scripts": ["src/assets/js/flowai-js.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets",
