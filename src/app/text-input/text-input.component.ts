@@ -1,11 +1,10 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
-import {DataFetchService} from "../../data/data-fetch.service";
+import {FormBuilder, FormControl} from '@angular/forms';
 import {FlowRequest} from "../flow-request";
-import {ChatMessage} from "../../models/chatmessage";
 import {MessageService} from "../../data/message.service";
 import {BotConnect} from "../azure/BotConnect";
 import {Sizes} from "../../jquery/sizes";
+import {UserInputController} from "../controlllers/UserInputController";
 
 
 @Component({
@@ -18,9 +17,9 @@ export class TextInputComponent implements OnInit {
   flow: FlowRequest[];
   sentMessages :String [];
   sentence:any;
-  Chatsentence:ChatMessage;
   placeholder: String;
   botConnect: BotConnect;
+  userInput: UserInputController;
 
   message = new FormControl('');
 
@@ -28,8 +27,9 @@ export class TextInputComponent implements OnInit {
   constructor(private fb:FormBuilder, private mess: MessageService) {
     this.flow =[];
     this.sentMessages =[];
-    this.placeholder = "Stuur een bericht"
+    this.placeholder = "Stuur een bericht";
     this.botConnect = new BotConnect(mess);
+    this.userInput = new UserInputController(mess);
     //this.mess = new MessageService();
   }
 
@@ -43,10 +43,7 @@ export class TextInputComponent implements OnInit {
   onClick() {
 
     let message = this.message.value;
-    console.log(message);
-    let sentence = new ChatMessage(message, false, 0);
-    this.botConnect.post(message);
-    this.mess.changeMessage(sentence);
+    this.userInput.sendUserGeneratedMessage(message);
     this.message.reset()
   }
 

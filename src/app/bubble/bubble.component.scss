@@ -3,22 +3,23 @@
 
 //this is also the main css for bubble-right. Only things that are specific for that position should go there
 
-#bubble{
-  max-width: 60%;
-  width: auto;
+.bubble{
+  max-width: 80%;
   background-color: #0f6674;
   margin: 0;
   padding: 0;
-  box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.59);
   border-radius: 27.41px;
+  display: block;
+  @include box-shadow;
 
 }
 
-#text{
-  max-width: 95%;
-  padding: 12px;
-  margin-left: 12px;
-  display: table;
+.bubbleText{
+  max-width: 90%;
+  padding: 8px;
+  margin-left: 20px;
+  margin-right: 8px;
+  word-wrap: break-word;
 
 }
 

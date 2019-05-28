@@ -1,10 +1,19 @@
+
+@font-face {
+  font-family: 'OpenSans-auto';
+  font-display: auto;
+  src: local('Open Sans'), url(/assets/fonts/OpenSans-Regular.ttf) format('ttf');
+}
+
 $fonts:(
-  primary:'Open Sans',
+  primary:'OpenSans-auto',
+  secondary: 'Arial'
 );
 
+$white : #FFFFFF;
 $secondaryColor: #FF7272;
 
-$barSize: 56px;
+$barHeight: 100px;
 
 $margin: 16px;
 
@@ -15,3 +24,9 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px
 );
+
+//mixins
+
+@mixin box-shadow{
+  box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.59);
+}

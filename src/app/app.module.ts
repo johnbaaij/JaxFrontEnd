@@ -19,6 +19,9 @@ import { BubbleLeftComponent } from './bubble-left/bubble-left.component';
 import { BubbleWrapperComponent } from './bubble-wrapper/bubble-wrapper.component';
 import { QuickReplyComponent } from './quick-reply/quick-reply.component';
 import {CookieService} from "ngx-cookie-service";
+import { MediaBubbleComponent } from './media-bubble/media-bubble.component';
+import { CardMainComponent } from './card-main/card-main.component';
+import { CardScoreComponent } from './card-score/card-score.component';
 
 
 
@@ -36,7 +39,10 @@ const appRoutes: Routes = [
     BubbleRightComponent,
     BubbleLeftComponent,
     BubbleWrapperComponent,
-    QuickReplyComponent
+    QuickReplyComponent,
+    MediaBubbleComponent,
+    CardMainComponent,
+    CardScoreComponent
   ],
   imports: [
     BrowserModule,

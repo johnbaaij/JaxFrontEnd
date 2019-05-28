@@ -18,8 +18,12 @@ export class MainScreenComponent implements OnInit {
   chat : ChatMessage;
   today: Date;
   private text: string;
+  buttonText: any;
+  title: any;
 
   constructor(private mess: MessageService, private cookieService: CookieService){
+    this.buttonText = ["hoi", "Hallo"];
+    this.title = "hoi";
 
 
     const cookieExists: boolean = this.cookieService.check('firstTime');
@@ -72,7 +76,7 @@ export class MainScreenComponent implements OnInit {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  onResize() {
     //perform actions
     Sizes.mainAreaSize();
     Sizes.textBarSize();

@@ -1,5 +1,4 @@
 import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
-import {element} from "protractor";
 
 @Component({
   selector: 'app-bubble',
@@ -16,7 +15,7 @@ export class BubbleComponent implements OnInit {
   @Input() message: String;
 
   ngOnInit() {
-    console.log("test")
+    //console.log("test")
   }
 
 }
