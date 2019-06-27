@@ -7,6 +7,15 @@ import {Sizes} from "../../jquery/sizes";
 import {UserInputController} from "../controlllers/UserInputController";
 
 
+
+
+/**
+ * This component is the text field the user interacts with when he or she is talking to Jax.
+ * The message is being stored as an object and passed on to the message service.
+ *
+ */
+
+
 @Component({
   selector: 'app-text-input',
   templateUrl: './text-input.component.html',
@@ -29,14 +38,15 @@ export class TextInputComponent implements OnInit {
     this.sentMessages =[];
     this.placeholder = "Stuur een bericht";
     this.botConnect = new BotConnect(mess);
-    this.userInput = new UserInputController(mess);
-    //this.mess = new MessageService();
+    this.userInput = new UserInputController(mess, this.botConnect);
   }
 
   @Output() messageEvent = new EventEmitter<string>();
 
   ngOnInit() {
     this.mess.currentMessage.subscribe(message => this.sentence = message);
+
+    //this JQuery script is used to generate the width of the textfield according to the width of the device
     Sizes.textBarSize();
 
   }

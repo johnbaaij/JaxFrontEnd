@@ -3,11 +3,9 @@ import {BotConnect} from "../azure/BotConnect";
 import {MessageService} from "../../data/message.service";
 
 export class UserInputController{
-  private botConnect: BotConnect;
 
 
-  constructor(private mess: MessageService){
-    this.botConnect = new BotConnect(mess);
+  constructor(private mess: MessageService, private botConnect: BotConnect){
 
   }
 

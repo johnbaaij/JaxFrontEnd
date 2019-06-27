@@ -6,11 +6,21 @@
       <app-bar></app-bar>
       <div id ="main" #scrollMe [scrollTop]="scrollMe.scrollHeight">
 
+        <!--Create a new wrapper for each message in the array.  -->
         <div *ngFor="let receivedMessage of receivedMessages">
           <div class="col-sm">
             <app-bubble-wrapper [chatMessage] = receivedMessage></app-bubble-wrapper>
           </div>
         </div>
+
+        <!-- The quick reply buttons are called without a loop. This needs to be updated in the future (see quick-reply.component) -->
+        <div class="buttonWrapper">
+          <app-quick-reply></app-quick-reply>
+          <app-quick-reply ></app-quick-reply>
+          <app-quick-reply ></app-quick-reply>
+          <app-quick-reply ></app-quick-reply>
+        </div>
+
         <app-text-input class="fixed-bottom" ></app-text-input>
       </div>
     </div>

@@ -1,5 +1,9 @@
-# Prototype
+# Jax! (Front end)
+Welcome to Jax! Jax is an energetic, playful and awesome Ajax fan who wants to help you with any question that you can have related to Ajax. 
 
+This is a Progressive Web App and the best way to communicate with Jax.  
+
+##CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server

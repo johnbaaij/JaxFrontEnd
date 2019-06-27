@@ -6,6 +6,16 @@ import {BubbleComponent} from "../bubble/bubble.component";
   templateUrl: './bubble-left.component.html',
   styleUrls: ['./bubble-left.component.scss']
 })
+
+
+
+
+/**
+ * Bubble left and Bubble right share the same purpose. They both display a message that is created by the user
+ * or the chatbot.
+ */
+
+//TODO make the bubbles a display:grid in css
 export class BubbleLeftComponent extends BubbleComponent implements OnInit {
 
   constructor() {

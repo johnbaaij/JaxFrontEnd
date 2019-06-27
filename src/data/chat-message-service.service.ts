@@ -2,6 +2,10 @@ import { Injectable } from '@angular/core';
 import {Observable} from "rxjs";
 import {ChatMessage} from "../models/chatmessage";
 
+//this is currently not in use
+
+//TODO remove this
+
 @Injectable({
   providedIn: 'root'
 })

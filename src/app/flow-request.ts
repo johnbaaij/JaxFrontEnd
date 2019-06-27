@@ -1,6 +1,9 @@
 import {Payload} from "./payload";
 import {Injectable} from "@angular/core";
 
+
+//old and no longer in use. Part of the old Flow.ai system. Kept in for documentation purposes
+
 export class FlowRequest {
 
   constructor(

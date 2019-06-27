@@ -9,7 +9,7 @@ export class ChatMessage {
   constructor(
     public message: string,
     public isReceived: boolean,
-    public timeStamp :number
+    public timeStamp :number,
 
   ){
 

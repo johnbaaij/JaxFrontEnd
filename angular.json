@@ -25,7 +25,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/firebase-messaging-sw.js"
+
             ],
             "styles": [
               "src/styles.scss"
@@ -60,7 +62,7 @@
                 }
               ],
               "serviceWorker": true,
-              "ngswConfigPath": "src/ngsw-config.json"
+              "ngswConfigPath": "./ngsw-config.json"
             }
           }
         },
@@ -97,7 +99,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/firebase-messaging-sw.js"
             ]
           }
         },
@@ -106,7 +109,8 @@
           "options": {
             "tsConfig": [
               "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "src/tsconfig.spec.json",
+              "src/firebase-messaging-sw.js"
             ],
             "exclude": [
               "**/node_modules/**"

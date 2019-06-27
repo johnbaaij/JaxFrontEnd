@@ -1,8 +1,11 @@
-<div class="bubbleWrapper">
+<!--This decided which bubble needs to be generated judged by a boolean in the message object. O-->
+
+
+<div *ngIf="displayMessage" class="bubbleWrapper">
   <app-bubble-right [message]="message" *ngIf="!received"></app-bubble-right>
 </div>
 
-<div class ="bubbleWrapper">
+<div *ngIf="displayMessage" class ="bubbleWrapper">
   <app-bubble-left [message]="message" *ngIf="received"></app-bubble-left>
 </div>
 

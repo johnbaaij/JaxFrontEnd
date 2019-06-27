@@ -4,7 +4,18 @@ import {MessageService} from "./message.service";
 import {ChatMessage} from "../models/chatmessage";
 
 
-const clientId = 'MWZmYWVmNDAtZmU3NS00MWYyLWIxMTAtN2ViOTg5Yjk3MDQxfGRhYmM1MjcyLTMzODYtNDgyMi05NWJlLWNlMmVjODMyZDIzNg==';
+
+/**
+ * This code was used to connect the chatbot to FLow.ai before the project moved to Azure.
+ * I kept this in for the sake of documentation. It is currently not in use.
+ *
+ * Most code written here is a copy from the Github page from Flow.ai https://github.com/flow-ai/flowai-js but adapted
+ * to TypeScript.
+ *
+ */
+
+
+const clientId = 'client id is the key';
 
 
 let message = new Message({
@@ -30,7 +41,8 @@ export class DataFetchService {
     this.client.send(message)
   }
 
-
+  //The Date is added to provide a unique identifier to the conversation. In further developent this should be adjusted to
+  //make it more unique
   private baseUrl ="https://api.flow.ai/socket.info/?clientId="+clientId+"&sessionId="+Date.now();
 
 
