@@ -3,7 +3,7 @@ Welcome to Jax! Jax is an energetic, playful and awesome Ajax fan who wants to h
 
 This is a Progressive Web App and the best way to communicate with Jax.  
 
-##CLI
+## CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
